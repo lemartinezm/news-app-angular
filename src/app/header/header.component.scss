@@ -1,0 +1,18 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: #3b0d11;
+
+  h1 {
+    text-align: center;
+    flex: 1;
+    color: #fff;
+  }
+}
+
+button {
+  position: absolute;
+  color: #fff;
+}
