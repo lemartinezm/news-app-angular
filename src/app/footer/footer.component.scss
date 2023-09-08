@@ -1,0 +1,27 @@
+@use "/src/variables";
+
+footer {
+  background-color: variables.$primary-color;
+  color: variables.$white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+
+  a {
+    color: variables.$white;
+    transition: 0.2s scale;
+  }
+
+  a:hover,
+  a:focus {
+    scale: 1.25;
+  }
+}
