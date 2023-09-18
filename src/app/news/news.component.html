@@ -1,1 +1,3 @@
-<p>{{currentCategory}}</p>
+<p>We have {{currentNews.length}} news in the category {{currentCategory}}</p>
+<app-card *ngFor="let currentArticle of currentNews"
+  [currentArticle]="currentArticle"></app-card>

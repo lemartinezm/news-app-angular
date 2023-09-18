@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { NewsModule } from './news/news.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     HeaderComponent,
     FooterComponent,
+    NewsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
