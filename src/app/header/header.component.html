@@ -1,5 +1,5 @@
-<mat-sidenav-container class="example-container" *ngIf="true">
-  <mat-sidenav #sidenav mode="over" [(opened)]="isDrawerOpen">
+<mat-drawer-container class="example-container" *ngIf="true">
+  <mat-drawer #sidenav mode="over" [(opened)]="isDrawerOpen">
     <nav>
       <ul>
         <li><a routerLink="/">General</a></li>
@@ -11,15 +11,31 @@
         <li><a routerLink="/technology">Technology</a></li>
       </ul>
     </nav>
-  </mat-sidenav>
+  </mat-drawer>
 
-  <mat-sidenav-content>
+  <mat-drawer-content>
     <mat-toolbar>
-      <button mat-icon-button aria-label="Show navigation bar"
+      <button
+        class="drawer-button"
+        mat-icon-button
+        aria-label="Show navigation bar"
         (click)="toogleDrawer()">
         <mat-icon>menu</mat-icon>
       </button>
       <h1>News App</h1>
     </mat-toolbar>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+    <div class="info-bar">
+      <div class="date-info">
+        {{currentDate}}
+      </div>
+      <div class="weather-info">
+        <mat-icon>cloud</mat-icon>
+        <span>28 °C</span>
+      </div>
+      <form class="search-bar">
+        <input class="search-input" type="text">
+        <button mat-button type="submit">Search</button>
+      </form>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

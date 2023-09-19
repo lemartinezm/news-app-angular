@@ -22,6 +22,12 @@ import { RouterLink } from '@angular/router';
 })
 export class HeaderComponent {
   isDrawerOpen: boolean = false;
+  currentDate: string = new Date().toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
   toogleDrawer() {
     this.isDrawerOpen = !this.isDrawerOpen;

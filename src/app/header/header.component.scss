@@ -2,6 +2,10 @@
   flex: 1 1 auto;
 }
 
+mat-sidenav {
+  height: 100vh;
+}
+
 mat-toolbar {
   background-color: #3b0d11;
 
@@ -12,11 +16,22 @@ mat-toolbar {
   }
 }
 
-mat-sidenav-container {
-  height: 100%;
-}
-
-button {
+.drawer-button {
   position: absolute;
   color: #fff;
+}
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  margin: 1rem 0;
+
+  .weather-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 }
