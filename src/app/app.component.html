@@ -1,3 +1,11 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<mat-drawer-container>
+  <mat-drawer #drawerReference mode="over">
+    <app-drawer></app-drawer>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <app-header [drawerReference]="drawerReference"></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-drawer-content>
+</mat-drawer-container>

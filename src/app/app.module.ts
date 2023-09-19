@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewsModule } from './news/news.module';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { DrawerComponent } from './drawer/drawer.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,9 +16,11 @@ import { NewsModule } from './news/news.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    DrawerComponent,
     HeaderComponent,
     FooterComponent,
     NewsModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

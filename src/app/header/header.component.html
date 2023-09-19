@@ -1,41 +1,23 @@
-<mat-drawer-container class="example-container" *ngIf="true">
-  <mat-drawer #sidenav mode="over" [(opened)]="isDrawerOpen">
-    <nav>
-      <ul>
-        <li><a routerLink="/">General</a></li>
-        <li><a routerLink="/business">Business</a></li>
-        <li><a routerLink="/entertainment">Entertainment</a></li>
-        <li><a routerLink="/health">Health</a></li>
-        <li><a routerLink="/science">Science</a></li>
-        <li><a routerLink="/sports">Sports</a></li>
-        <li><a routerLink="/technology">Technology</a></li>
-      </ul>
-    </nav>
-  </mat-drawer>
-
-  <mat-drawer-content>
-    <mat-toolbar>
-      <button
-        class="drawer-button"
-        mat-icon-button
-        aria-label="Show navigation bar"
-        (click)="toogleDrawer()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <h1>News App</h1>
-    </mat-toolbar>
-    <div class="info-bar">
-      <div class="date-info">
-        {{currentDate}}
-      </div>
-      <div class="weather-info">
-        <mat-icon>cloud</mat-icon>
-        <span>28 °C</span>
-      </div>
-      <form class="search-bar">
-        <input class="search-input" type="text">
-        <button mat-button type="submit">Search</button>
-      </form>
-    </div>
-  </mat-drawer-content>
-</mat-drawer-container>
+ <mat-toolbar>
+  <button
+    class="drawer-button"
+    mat-icon-button
+    aria-label="Show navigation bar"
+    (click)="drawerReference.open()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <h1>News App</h1>
+</mat-toolbar>
+<div class="info-bar">
+  <div class="date-info">
+    {{currentDate}}
+  </div>
+  <div class="weather-info">
+    <mat-icon>cloud</mat-icon>
+    <span>28 °C</span>
+  </div>
+  <form class="search-bar">
+    <input class="search-input" type="text">
+    <button mat-button type="submit">Search</button>
+  </form>
+</div>
