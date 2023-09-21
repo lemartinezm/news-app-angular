@@ -1,3 +1,4 @@
 <p>We have {{currentNews.length}} news in the category {{currentCategory}}</p>
+<div class="trending-box">Trending</div>
 <app-card *ngFor="let currentArticle of currentNews"
   [currentArticle]="currentArticle"></app-card>
